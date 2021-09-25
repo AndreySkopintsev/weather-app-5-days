@@ -9,18 +9,61 @@
 </head>
 <body>
     <div class="container">
-        <div class="search">
-            <input type="text"
-                    id="input" 
-                    placeholder="Please type in the city..." 
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Please type in the city...'" >
-            <button id="slide"><i class="fas fa-search"></i></button>
-        </div>
-        
-        <div class="info" id="info">
-            
-        </div>
+       <main>
+            <div class="detailed-weather">
+                <h2>Few Clouds</h2>
+                <h3>Auckland</h3>
+                <span id="degrees" class="degrees">13 °C</span>
+                <span id="weather-pic" class="weather-pic">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                </span>
+                <div class="input-box">
+                    <input id="location" type="text" placeholder="Seacrh Location...">
+                    <button id="submitBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="weather-feel">
+                <div class="feel-box">
+                    <div class="pic"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="feel">
+                        <p>Feels like</p>
+                        <span id="temperature">
+                            13 °C
+                        </span>
+                    </div>
+                </div>
+                <div class="feel-box">
+                    <div class="pic"><i class="fas fa-tint"></i></div>
+                    <div class="feel">
+                        <p>Humidity</p>
+                        <span id="humidity">
+                            88%
+                        </span>
+                    </div>
+                </div>
+                <div class="feel-box">
+                    <div class="pic"><i class="fas fa-cloud-rain"></i></div>
+                    <div class="feel">
+                        <p>Chances of rain</p>
+                        <span id="rainChance">
+                            0%
+                        </span>
+                    </div>
+                </div>
+                <div class="feel-box">
+                    <div class="pic"><i class="fas fa-wind"></i></div>
+                    <div class="feel">
+                        <p>Wind speed</p>
+                        <span id="temperature">
+                            6.4 km/h
+                        </span>
+                    </div>
+                </div>
+            </div>
+       </main>
+       <div class="forecast">
+
+       </div>
     </div>
     <script src="script.js"></script>
 </body>
