@@ -37,7 +37,7 @@ async function fetchByName(city='moscow'){
 
 // Функция находящая информацию по ширине и долготе
 async function fetchByCoordinates(coordinates){
-    let info = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,alerts&units=metric&appid=20f7632ffc2c022654e4093c6947b4f4`)
+    let info = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,alerts&units=metric&appid=87dafebfeebac9eb90265653aa6e5a00`)
     let json = await info.json()
     return json
 }
